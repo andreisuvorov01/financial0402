@@ -30,5 +30,10 @@ namespace financial_analitik
             insert_windows insert_Windows = new insert_windows();
             insert_Windows.Show();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

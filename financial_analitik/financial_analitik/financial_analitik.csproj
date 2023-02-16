@@ -67,6 +67,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="file\BaseViewModel.cs" />
+    <Compile Include="file\FileWorker.cs" />
     <Compile Include="insert_windows.xaml.cs">
       <DependentUpon>insert_windows.xaml</DependentUpon>
     </Compile>
@@ -100,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dohod.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rashod.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

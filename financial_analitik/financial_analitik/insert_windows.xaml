@@ -8,11 +8,13 @@
         ResizeMode="NoResize"
         Title="Вставка значений" Height="200" Width="400" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="Внести значения" HorizontalAlignment="Center" Margin="0,136,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Внести значения" HorizontalAlignment="Center" Margin="0,136,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="219,36,0,0" TextWrapping="Wrap" Name="rashod" Text="расходы" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="219,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="145,10,0,0" TextWrapping="Wrap" Text="Введите расходы" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,54,0,0" TextWrapping="Wrap" Text="Введи доходы" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="46,36,0,0" TextWrapping="Wrap" x:Name="rashod_Copy" Text="расходы" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="46,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,13 @@ namespace financial_analitik
         public insert_windows()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string path = @"D:\IS32\parada_suvorov\financial_analitik\financial_analitik\dohod.txt";
+            string rashod_text = rashod.Text.ToString() ;
+            File.AppendAllText(path, rashod_text + "\n");
         }
     }
 }

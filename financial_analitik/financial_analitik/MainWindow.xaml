@@ -9,11 +9,29 @@
         
         Title="Анализ финансов" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="Внести данные ->" HorizontalAlignment="Left" Margin="670,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,92,521,0" SelectionChanged="DataGrid_SelectionChanged"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="521,92,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="85,71,0,0" TextWrapping="Wrap" Text="Расходы" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="675,71,0,0" TextWrapping="Wrap" Text="доходы" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" Text="Анализ финансов" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="300"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Внести данные ->" HorizontalAlignment="Left" Margin="134,10,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="2" Width="123"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,108,0,0" TextWrapping="Wrap" Text="Расходы" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,94,0,0" TextWrapping="Wrap" Text="доходы" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.5,0.5" Width="64">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" Text="Анализ финансов" VerticalAlignment="Top" Grid.Column="1" FontSize="30" Height="82" Width="246"/>
+        <TextBlock  HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="280" Width="247"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="280" Width="247" Grid.Column="2"/>
     </Grid>
 </Window>
